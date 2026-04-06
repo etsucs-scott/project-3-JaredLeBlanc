@@ -52,3 +52,4 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+/.vs/Minesweeper/FileContentIndex/dcef7ae1-dc70-491a-a856-60ea3cfa77f8.vsidx
