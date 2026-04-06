@@ -1,0 +1,62 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jerbe\\source\\repos\\project-3-JaredLeBlanc\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{08093D6D-21C1-412B-AB61-C704187E4A02}|Minesweeper.Console\\Minesweeper.Console.csproj|c:\\users\\jerbe\\source\\repos\\project-3-jaredleblanc\\minesweeper.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08093D6D-21C1-412B-AB61-C704187E4A02}|Minesweeper.Console\\Minesweeper.Console.csproj|solutionrelative:minesweeper.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D238832-80E1-400E-840D-CA6797C7806E}|Minesweeper.Core\\Minesweeper.Core.csproj|c:\\users\\jerbe\\source\\repos\\project-3-jaredleblanc\\minesweeper.core\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D238832-80E1-400E-840D-CA6797C7806E}|Minesweeper.Core\\Minesweeper.Core.csproj|solutionrelative:minesweeper.core\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\jerbe\\source\\repos\\project-3-JaredLeBlanc\\Minesweeper.Core\\Class1.cs",
+              "RelativeDocumentMoniker": "Minesweeper.Core\\Class1.cs",
+              "ToolTip": "C:\\Users\\jerbe\\source\\repos\\project-3-JaredLeBlanc\\Minesweeper.Core\\Class1.cs",
+              "RelativeToolTip": "Minesweeper.Core\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T15:47:46.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jerbe\\source\\repos\\project-3-JaredLeBlanc\\Minesweeper.Console\\Program.cs",
+              "RelativeDocumentMoniker": "Minesweeper.Console\\Program.cs",
+              "ToolTip": "C:\\Users\\jerbe\\source\\repos\\project-3-JaredLeBlanc\\Minesweeper.Console\\Program.cs*",
+              "RelativeToolTip": "Minesweeper.Console\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-06T15:47:24.472Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
