@@ -45,9 +45,9 @@ namespace Minesweeper.ConsoleApp
             Console.Clear();
             Console.WriteLine("=== MINESWEEPER ===\n");
             Console.WriteLine("MENU: ");
-            Console.WriteLine("1. 8x8");
-            Console.WriteLine("2. 12x12");
-            Console.WriteLine("3. 16x16");
+            Console.WriteLine("1. 8x8 - 10 Mines");
+            Console.WriteLine("2. 12x12 - 25 Mines");
+            Console.WriteLine("3. 16x16 - 40 Mines");
             Console.WriteLine("q. Quit");
 
             var input = Console.ReadLine();
