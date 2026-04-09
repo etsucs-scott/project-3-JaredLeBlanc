@@ -33,9 +33,9 @@ b	Bomb (revealed when hit)
 Board Example
 ```
 Menu: 
-1) 8x8
-2) 12x12
-3) 16x16
+1) 8x8 - 10 Mines
+2) 12x12 - 25 Mines
+3) 16x16 - 40 Mines
 Seed (blank = time): 12345
 
 Commands: r row col | f row col | q
