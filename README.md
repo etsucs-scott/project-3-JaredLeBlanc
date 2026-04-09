@@ -88,8 +88,12 @@ File: Documents/Minesweeper_UML.png
 
 Diagram shows:
 
-All core classes (GameApp, Renderer, InputHandler, ICommands, RevealCommand, FlagCommand, Game, Board, Tile, RevealService, WinChecker, AdjacencyCalculator, MineGenerator, HighScore, HighScoreManager, HighScoreRepository, CsvParser)
+All core classes: (GameApp, Renderer, InputHandler, ICommands, RevealCommand,
+ FlagCommand, Game, Board, Tile, RevealService, WinChecker, AdjacencyCalculator,
+ MineGenerator, HighScore, HighScoreManager, HighScoreRepository, CsvParser)
+
 Relationships: composition, usage, and implementation
+
 Key fields/properties and methods
 ```
 
@@ -107,10 +111,12 @@ Unit Tests
 ```
 Run unit tests using xUnit:
 dotnet test
-Tests cover:
-Board generation
 ```
+Tests cover:
+```
+Board generation
 Adjacency calculations
 Cascade reveal
 Win/Loss rules
 High score persistence
+```
