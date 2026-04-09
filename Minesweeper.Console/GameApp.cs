@@ -21,6 +21,7 @@ namespace Minesweeper.ConsoleApp
 
         public void Run()
         {
+
             while (true)
             {
                 var config = ShowMenu();
@@ -35,6 +36,7 @@ namespace Minesweeper.ConsoleApp
                 var game = new Game(config.Value.rows, config.Value.cols, config.Value.mines, seed);
 
                 RunGame(game, config.Value.size, seed);
+
             }
         }
 

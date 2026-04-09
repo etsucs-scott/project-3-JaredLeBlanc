@@ -11,7 +11,7 @@ namespace Minesweeper.Core.HighScoreServices
 {
     public class HighScoreManager : IHighScoreManager
     {
-        private  IHighScoreRepository _repo { get; }
+        private IHighScoreRepository _repo { get; }
 
         public HighScoreManager(IHighScoreRepository repo)
         {

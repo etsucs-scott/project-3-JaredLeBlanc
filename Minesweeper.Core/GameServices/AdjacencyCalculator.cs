@@ -38,7 +38,7 @@ namespace Minesweeper.Core.GameServices
                     if (dr == 0 && dc == 0) continue;
 
                     int nr = r + dr;
-                    int nc = c + dr;
+                    int nc = c + dc;
 
                     if (nr >= 0 && nr < rows && nc >= 0 && nc < cols)
                     {

@@ -22,15 +22,13 @@ namespace Minesweeper.Core.Game.Game
             // reveal this tile
             tile.IsRevealed = true;
 
-
             // if tile has adjacent mines, stop recursion
-            if (tile.IsMine || tile.AdjacentMines > 0)
+            if (tile.AdjacentMines == 0 && !tile.IsMine)
             {
-                return;
-            }
-            foreach (var (nr, nc) in GetNeighbors(r, c, rows, cols))
-            {
-                Reveal(tiles, rows, cols, nr, nc);
+                foreach (var (nr, nc) in GetNeighbors(r, c, rows, cols))
+                {
+                    Reveal(tiles, rows, cols, nr, nc);
+                }
             }
         }
 

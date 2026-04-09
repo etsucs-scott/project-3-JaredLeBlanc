@@ -10,7 +10,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minesweeper.ConsoleApp", "M
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minesweeper.Core", "Minesweeper.Core\Minesweeper.Core.csproj", "{1D238832-80E1-400E-840D-CA6797C7806E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinesweeperTests", "MinesweeperTests\MinesweeperTests.csproj", "{56C1A18D-E78C-4DD4-895E-75C8D8C021B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minesweeper.Tests", "MinesweeperTests\Minesweeper.Tests.csproj", "{56C1A18D-E78C-4DD4-895E-75C8D8C021B6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1D238832-80E1-400E-840D-CA6797C7806E} = {1D238832-80E1-400E-840D-CA6797C7806E}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

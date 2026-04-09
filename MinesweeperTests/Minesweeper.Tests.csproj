@@ -18,4 +18,8 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Minesweeper.Core\Minesweeper.Core.csproj" />
+  </ItemGroup>
+
 </Project>
