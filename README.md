@@ -2,39 +2,119 @@
 
 A console-based Minesweeper game in C# with deterministic mine placement, multiple board sizes, cascading reveals, and high score persistence.
 
-This repository is intentionally minimal. You are responsible for:
-- Creating the solution and projects
-- Designing the class structure
-- Implementing the required functionality
-
 ---
 
-## Getting Started (CLI)
+## Build & Run
 
-You may use **Visual Studio**, **VS Code**, or the **terminal**.
-
-### Create a solution
 ```bash
-dotnet new sln -n ProjectName
-```
-
-### Create a project (example: console app)
-```bash
-dotnet new console -n ProjectName.App
-```
-
-### Add the project to the solution
-```bash
-dotnet sln add ProjectName.App
-```
-
-### Build and run
-```bash
+git clone https://github.com/etsucs-scott/project-3-JaredLeBlanc.git
+cd project-3
 dotnet build
-dotnet run --project ProjectName.App
+dotnet run --project src/Minesweeper.Console
 ```
+Controls
+```
+Command	Description
+r row col	Reveal the tile at (row, col)
+f row col	Flag or unflag the tile at (row, col)
+q	Quit the current game
 
-## Notes
-- Commit early and commit often.
-- Your repository history is part of your submission.
-- Update this README with build/run instructions specific to your project.
+Note: Rows and columns are 0-indexed.
+```
+Legend
+```
+Symbol	Meaning
+#	Hidden tile
+f	Flagged tile
+b	Bomb (revealed when hit)
+.	Empty revealed tile
+1-8	Number of adjacent mines
+```
+Board Example
+```
+Menu: 
+1) 8x8 - 10 Mines
+2) 12x12 - 25 Mines
+3) 16x16 - 40 Mines
+Seed (blank = time): 12345
+
+Commands: r row col | f row col | q
+
+  0 1 2 3 4 5 6 7
+0 # # # # # # # #
+1 # # # # # # # #
+2 # # # # # # # #
+3 # # # # # # # #
+4 # # # # # # # #
+5 # # # # # # # #
+6 # # # # # # # #
+7 # # # # # # # #
+
+> r 2 3
+  0 1 2 3 4 5 6 7
+0 # # # # # # # #
+1 # # # # # # # #
+2 # # 1 2 # # # #
+3 # # . . 4 # # #
+4 # # . . . # # #
+5 # # # # # # # #
+6 # # # # # # # #
+7 # # # # # # # #
+```
+Win/Lose Conditions
+```
+Win: All non-mine tiles are revealed.
+Lose: Revealed a mine tile.
+```
+Seed Usage
+```
+Prompted for a seed (integer) at game start.
+Leaving blank generates a seed from current time.
+Seed determines mine placement for reproducible games.
+```
+High Scores
+```
+Fastest completion time wins.
+Tie-breaker: fewer moves.
+Stores top 5 scores per board size.
+Saved in data/highscores.csv (CSV format):
+size,seconds,moves,seed,timestamp
+8x8,45,12,12345,2026-04-08T14:23:10Z
+```
+UML Diagram
+```
+File: Documents/Minesweeper_UML.png
+
+Diagram shows:
+
+All core classes (GameApp, Renderer, InputHandler, ICommands,
+RevealCommand, FlagCommand, Game, Board, Tile, RevealService,
+WinChecker, AdjacencyCalculator, MineGenerator, HighScore,
+HighScoreManager, HighScoreRepository, CsvParser)
+
+Relationships: composition, usage, and implementation
+
+Key fields/properties and methods
+```
+Git Usage Notes
+```
+Clone:
+git clone https://github.com/etsucs-scott/project-3-USER.git
+Build:
+dotnet build
+Run:
+dotnet run --project src/Minesweeper.Console
+```
+Unit Tests
+```
+Run unit tests using xUnit:
+dotnet test
+```
+Tests cover
+```
+Board generation
+Adjacency calculations
+Cascade reveal
+Win/Loss rules
+High score persistence
+```
